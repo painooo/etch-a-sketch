@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+#grid {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    width:960px;
+    height:960px;
+}
+.cellY {
+    display:flex;
+    flex:1;
+    background:red;
+}
+.cellX {
+    flex:1;
+    background:aqua;
+}
