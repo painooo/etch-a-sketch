@@ -2,8 +2,10 @@ const grid = document.querySelector("#grid");
 const setGridSize = document.querySelector("#setGridSize");
 setGridSize.addEventListener('click', () => {
     let size = parseInt(prompt('How big should a side be?'));
-    removeGrid();
-    makeGrid(size);
+    if (size <= 100){
+        removeGrid();
+        makeGrid(size);
+    }
 });
 function makeGrid(size){
     for (i=1;i<=(size);i++){
